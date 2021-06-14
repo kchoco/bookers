@@ -1,5 +1,6 @@
+<p id="notice"><%= flash[:success] %></p>
 
-<p id="notice">Book was successfully created.</p>
+<p id="notice"><%= flash[:notice] %></p>
   <p>
   <strong>Title:</strong><%= @book.title %>
   </p>
@@ -8,4 +9,4 @@
     <strong>Body:</strong><%= @book.body %>
   </p>
 
-  <P><%= link_to "Edit", edit_book_path(@book.id) %> | <%= link_to "Back", '/books' %></P>
+  <p><%= link_to "Edit", edit_book_path(@book.id) %> | <%= link_to "Back", '/books' %></p>
